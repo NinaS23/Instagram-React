@@ -15,7 +15,7 @@ export default function sugestions(){
             <div>Ver tudo</div>
           </div>
 
-          <div class="sugestao"> <!-- sugestao -->
+          <div class="sugestao"> 
             <div class="usuario">
               <img src="assets/img/bad.vibes.memes.svg" />
               <div class="texto">

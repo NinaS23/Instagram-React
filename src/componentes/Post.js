@@ -48,7 +48,7 @@ function PostEstrutura(props){
           </div>
 
           <div class="curtidas">
-            <img src={props.imageUserLikes}/>
+            <img src={props.imageUserLikes} alt="imagem"/>
             <div class="texto">
               Curtido por <strong>{props.textLikes}</strong> e <strong>{props.textNumber}</strong>
             </div>

@@ -1,5 +1,4 @@
 import Logo from "../../public/assets/img/logo.png"
-
 export default function TopoDoSite() {
     return (
         <>

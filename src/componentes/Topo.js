@@ -7,7 +7,7 @@ export default function TopoDoSite() {
                     <div class="logo">
                         <ion-icon name="logo-instagram"></ion-icon>
                         <div class="separador"></div>
-                        <img src={logo} />
+                        <img src={logo} alt = "logo"/>
                     </div>
 
                     <div class="logo-mobile">
@@ -15,7 +15,7 @@ export default function TopoDoSite() {
                     </div>
 
                     <div class="instagram-mobile">
-                        <img src={logo} />
+                        <img src={logo} alt = "logo"/>
                     </div>
 
                     <div class="pesquisa">

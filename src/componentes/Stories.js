@@ -4,6 +4,7 @@
 const objeStories = [{
     image: "assets/img/9gag.svg",
     user: "9gag",
+    
   },
   {
     image: "assets/img/meowed.svg",
@@ -39,9 +40,9 @@ function Storie(props){
     return (
         <div class="story">
         <div class="imagem">
-          <img src={props.image} />
+          <img src={props.image} alt="userimage" />
         </div>
-        <div class="usuario">
+        <div key ={props.index}class="usuario">
          {props.user}
         </div>
       </div> 
@@ -53,11 +54,12 @@ function Storie(props){
 export default function Stories(){
     return (
         <div class="stories">
-          {objeStories.map((story) =>{
+          {objeStories.map((story , index) =>{
               return (
                   <Storie
                   image={story.image}
                   user={story.user}
+                  index={story.index}
                   />
               )
           })}

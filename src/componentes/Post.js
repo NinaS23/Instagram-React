@@ -5,7 +5,8 @@ const objPost = [{
   imageContent:"assets/img/gato-telefone.svg",
   imageUserLikes: "assets/img/respondeai.svg" ,
   textLikes:"respondeai",
-  textNumber: "outras 101.523 pessoas"
+  textNumber: "outras 101.523 pessoas",
+  chave:1
 },
 {
     imageUser:"assets/img/barked.svg",
@@ -13,7 +14,8 @@ const objPost = [{
     imageContent:"assets/img/dog.svg",
     imageUserLikes: "assets/img/adorable_animals.svg" ,
     textLikes:"adorable_animals",
-    textNumber: "outras 99.159 pessoas"  
+    textNumber: "outras 99.159 pessoas" ,
+    chave:2 
 }
 ]
 
@@ -22,8 +24,8 @@ function PostEstrutura(props){
     return (
         <div class="post">
         <div class="topo">
-          <div class="usuario">
-            <img src={props.imageUser} />
+          <div key={props.chave} class="usuario">
+            <img src={props.imageUser} alt="usuario imagem" />
            {props.nameUser}
           </div>
           <div class="acoes">
@@ -32,7 +34,7 @@ function PostEstrutura(props){
         </div>
 
         <div class="conteudo">
-          <img src={props.imageContent}/>
+          <img src={props.imageContent} alt="imagem de um dog"/>
         </div>
 
         <div class="fundo">
@@ -72,6 +74,7 @@ export default function Posts(){
               imageUserLikes={post.imageUserLikes}
               textLikes={post.textLikes}
               textNumber={post.textNumber}
+              chave={post.chave}
               
               />
              )

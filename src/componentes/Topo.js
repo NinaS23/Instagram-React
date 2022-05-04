@@ -1,4 +1,4 @@
-import Logo from "../../public/assets/img/logo.png"
+const  logo = "../../public/assets/img/logo.png"
 export default function TopoDoSite() {
     return (
         <>
@@ -7,7 +7,7 @@ export default function TopoDoSite() {
                     <div class="logo">
                         <ion-icon name="logo-instagram"></ion-icon>
                         <div class="separador"></div>
-                        <img src={Logo} />
+                        <img src={logo} />
                     </div>
 
                     <div class="logo-mobile">
@@ -15,7 +15,7 @@ export default function TopoDoSite() {
                     </div>
 
                     <div class="instagram-mobile">
-                        <img src={Logo} />
+                        <img src={logo} />
                     </div>
 
                     <div class="pesquisa">

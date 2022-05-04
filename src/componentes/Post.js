@@ -18,7 +18,7 @@ const objPost = [{
 ]
 
 
-function postEstrutura(props){
+function PostEstrutura(props){
     return (
         <div class="post">
         <div class="topo">
@@ -65,7 +65,7 @@ export default function Posts(){
         <>      
          {objPost.map((post)=>{
              return (
-              <postEstrutura 
+              <PostEstrutura 
               imageUser={post.imageUser}
               nameUser ={post.nameUser}
               imageContent={post.imageContent}

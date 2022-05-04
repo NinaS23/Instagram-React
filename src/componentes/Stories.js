@@ -55,7 +55,7 @@ export default function Stories(){
         <div class="stories">
           {objeStories.map((story) =>{
               return (
-                  <storie
+                  <Storie
                   image={story.image}
                   user={story.user}
                   />

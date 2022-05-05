@@ -39,12 +39,12 @@ function PostEstrutura(props){
         </div>
 
         <div class="conteudo">
-          <img onClick={()=> setLike(<ion-icon name="heart"></ion-icon>)} src={props.imageContent} alt="imagem de um dog"/>
+          <img onClick={()=>  setLike(<ion-icon name="heart"></ion-icon>)} src={props.imageContent} alt="imagem de um dog"/>
         </div>
 
         <div class="fundo">
           <div class="acoes">
-            <div>
+            <div onClick={()=> setLike(<ion-icon name="heart-outline"></ion-icon>)}>
                {like}
               <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-icon name="paper-plane-outline"></ion-icon>

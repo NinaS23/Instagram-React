@@ -79,7 +79,7 @@ function Sugestoes(props){
 
   )
 }
-export default function sugestions(){
+export default function Sugestions(){
     return (
       <div class="sidebar">
         {objUsuario.map((user) => {

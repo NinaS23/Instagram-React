@@ -25,13 +25,7 @@ const objPost = [{
 function PostEstrutura(props){
   const[like , setLike]  = useState(<ion-icon name="heart-outline"></ion-icon>)
 
-  function VerificaLike(){
-    if(like !== undefined){
-      setLike(<ion-icon name="heart"></ion-icon>)
-    }else{
-      setLike(<ion-icon name="heart"></ion-icon>)
-    }
-  }
+  
     return (
         <div class="post">
         <div class="topo">
@@ -45,7 +39,7 @@ function PostEstrutura(props){
         </div>
 
         <div class="conteudo">
-          <img onClick={VerificaLike} src={props.imageContent} alt="imagem de um dog"/>
+          <img onClick={()=> setLike(<ion-icon name="heart"></ion-icon>)} src={props.imageContent} alt="imagem de um dog"/>
         </div>
 
         <div class="fundo">

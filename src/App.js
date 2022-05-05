@@ -8,7 +8,7 @@ import Sugestions from "./componentes/Sugestao";
 
 
 
-function Orgazing() {
+function Organazing() {
     return (
         <>
             <TopoDoSite />
@@ -42,7 +42,7 @@ function Orgazing() {
 export default function App(){
     return (
         <>
-       <Orgazing/>
+       <Organazing/>
         </>
     )
 }

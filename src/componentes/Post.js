@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 const objPost = [{
   imageUser:"assets/img/meowed.svg",
@@ -20,7 +21,17 @@ const objPost = [{
 ]
 
 
+
 function PostEstrutura(props){
+  const[like , setLike]  = useState(<ion-icon name="heart-outline"></ion-icon>)
+
+  function VerificaLike(){
+    if(like !== undefined){
+      setLike(<ion-icon name="heart"></ion-icon>)
+    }else{
+      setLike(<ion-icon name="heart"></ion-icon>)
+    }
+  }
     return (
         <div class="post">
         <div class="topo">
@@ -34,13 +45,13 @@ function PostEstrutura(props){
         </div>
 
         <div class="conteudo">
-          <img src={props.imageContent} alt="imagem de um dog"/>
+          <img onClick={VerificaLike} src={props.imageContent} alt="imagem de um dog"/>
         </div>
 
         <div class="fundo">
           <div class="acoes">
             <div>
-              <ion-icon name="heart-outline"></ion-icon>
+               {like}
               <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
